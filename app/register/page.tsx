@@ -1,13 +1,13 @@
+import Image from "next/image";
+import logo from "@/public/logo.svg";
+
 export default function page() {
   return (
     <div className="w-full h-[100vh] flex justify-center">
       <div className="max-w-[425px] h-[537.32px] flex flex-col items-center">
         <div className="max-w-[134.44px] max-h-[133.36px] mt-[25px]">
-          <div className="w-full h-[90.5px] bg-black"></div>
-          <div className="w-full h-[38px] flex justify-center">
-            <div className="max-w-[112px] g-[38px] text-[31.59px] leading-[37.9px] font-sans">
-              kurrious
-            </div>
+          <div className="w-full h-[90.5px]">
+            <Image src={logo} alt="logo" width={145} height={143.85} />
           </div>
         </div>
         <div className="max-w-[425px] h-[537.32px] mt-[30px]">
